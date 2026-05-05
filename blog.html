@@ -19,11 +19,12 @@
       --border: #e5d9f2;
       --text:   #2c475c;
       --muted:  #8b7aa3;
+      --nav-height: 64px;
     }
     body { font-family: 'Inter', sans-serif; background: #f9fbfd; color: var(--text); line-height: 1.6; }
 
     /* NAV */
-    .site-nav { background: var(--navy); padding: 0 5vw; display: flex; align-items: center; justify-content: space-between; height: 64px; position: sticky; top: 0; z-index: 100; }
+    .site-nav { background: var(--navy); padding: 0 5vw; display: flex; align-items: center; justify-content: space-between; height: var(--nav-height); position: sticky; top: 0; z-index: 100; }
     .nav-logo { color: #fff; font-size: 1.3rem; font-weight: 800; letter-spacing: -.02em; text-decoration: none; }
     .nav-logo span { color: var(--accent); }
     .nav-links { display: flex; gap: 28px; list-style: none; }
@@ -43,7 +44,27 @@
     .hero-stat .lbl { font-size: .78rem; color: rgba(255,255,255,.6); margin-top: 4px; }
 
     /* FILTER */
-    .filter-bar { background: linear-gradient(90deg, rgba(245, 232, 255, 0.6), rgba(240, 249, 252, 0.6)); border-bottom: 2px solid var(--accent); padding: 14px 5vw; display: flex; gap: 10px; overflow-x: auto; scrollbar-width: none; align-items: center; }
+    .filter-bar {
+      background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(240, 249, 252, 1));
+      border-bottom: 2px solid var(--accent);
+      padding: 14px 5vw;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      justify-content: center;
+      position: sticky;
+      top: var(--nav-height);
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 28px;
+      z-index: 99;
+      width: 100%;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
     .filter-bar::-webkit-scrollbar { display: none; }
     .filter-btn { border: 1.5px solid transparent; background: rgba(255, 255, 255, 0.7); cursor: pointer; padding: 9px 20px; font-family: inherit; font-size: .85rem; font-weight: 600; color: var(--navy); border-radius: 24px; white-space: nowrap; transition: all .25s ease; box-shadow: 0 2px 8px rgba(106, 74, 148, 0.08); }
     .filter-btn:hover { background: rgba(69, 189, 232, 0.12); color: var(--teal); border-color: var(--teal); box-shadow: 0 4px 12px rgba(69, 189, 232, 0.15); transform: translateY(-1px); }
