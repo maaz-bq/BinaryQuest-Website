@@ -6,18 +6,19 @@
   <title>BinaryQuest | Blog &amp; Insights</title>
   <meta name="description" content="How BinaryQuest is transforming ERP, AI, Cloud, CRM, HRM, and Supply Chain across South and South-East Asia.">
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
     :root {
-      --navy:   #0a1c2c;
-      --teal:   #0f2b3d;
-      --accent: #059669;
-      --blue:   #1b4f6e;
-      --border: #e2ecf3;
+      --navy:   #6A4A94;
+      --teal:   #45BDE8;
+      --accent: #EC008C;
+      --blue:   #45BDE8;
+      --border: #e5d9f2;
       --text:   #2c475c;
-      --muted:  #6b8fa8;
+      --muted:  #8b7aa3;
     }
     body { font-family: 'Inter', sans-serif; background: #f9fbfd; color: var(--text); line-height: 1.6; }
 
@@ -30,23 +31,23 @@
     .nav-links a:hover, .nav-links a.active { color: #fff; }
 
     /* HERO */
-    .blog-hero { background: linear-gradient(135deg, #0a1c2c 0%, #1b4f6e 60%, #0f6b4a 100%); color: #fff; text-align: center; padding: 80px 20px 90px; }
-    .blog-hero .eyebrow { display: inline-block; background: rgba(5,150,105,.25); border: 1px solid rgba(5,150,105,.5); border-radius: 40px; padding: 5px 18px; font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 22px; color: #a7f3d0; }
+    .blog-hero { background: linear-gradient(135deg, #70499B 0%, #A62D82 60%, #CB1A71 100%); color: #fff; text-align: center; padding: 80px 20px 90px; }
+    .blog-hero .eyebrow { display: inline-block; background: rgba(236,0,140,.15); border: 1px solid rgba(236,0,140,.35); border-radius: 40px; padding: 5px 18px; font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 22px; color: #EC008C; }
     .blog-hero h1 { font-size: clamp(2rem, 5vw, 3.4rem); font-weight: 800; line-height: 1.15; }
-    .blog-hero h1 span { color: #6ee7b7; }
+    .blog-hero h1 span { color: #FDC688; }
     .blog-hero p { margin-top: 18px; font-size: 1.1rem; color: rgba(255,255,255,.75); max-width: 560px; margin-left: auto; margin-right: auto; }
     .hero-stats { display: flex; gap: 0; justify-content: center; margin-top: 44px; flex-wrap: wrap; }
     .hero-stat { padding: 20px 36px; border-right: 1px solid rgba(255,255,255,.15); text-align: center; }
     .hero-stat:last-child { border-right: none; }
-    .hero-stat .num { font-size: 2rem; font-weight: 800; color: #6ee7b7; line-height: 1; }
+    .hero-stat .num { font-size: 2rem; font-weight: 800; color: #FDC688; line-height: 1; }
     .hero-stat .lbl { font-size: .78rem; color: rgba(255,255,255,.6); margin-top: 4px; }
 
     /* FILTER */
-    .filter-bar { background: #fff; border-bottom: 1px solid var(--border); padding: 0 5vw; display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
+    .filter-bar { background: linear-gradient(90deg, rgba(245, 232, 255, 0.6), rgba(240, 249, 252, 0.6)); border-bottom: 2px solid var(--accent); padding: 14px 5vw; display: flex; gap: 10px; overflow-x: auto; scrollbar-width: none; align-items: center; }
     .filter-bar::-webkit-scrollbar { display: none; }
-    .filter-btn { border: none; background: none; cursor: pointer; padding: 16px 20px; font-family: inherit; font-size: .85rem; font-weight: 600; color: var(--muted); border-bottom: 3px solid transparent; white-space: nowrap; transition: .2s; }
-    .filter-btn:hover { color: var(--teal); }
-    .filter-btn.active { color: var(--teal); border-bottom-color: var(--accent); }
+    .filter-btn { border: 1.5px solid transparent; background: rgba(255, 255, 255, 0.7); cursor: pointer; padding: 9px 20px; font-family: inherit; font-size: .85rem; font-weight: 600; color: var(--navy); border-radius: 24px; white-space: nowrap; transition: all .25s ease; box-shadow: 0 2px 8px rgba(106, 74, 148, 0.08); }
+    .filter-btn:hover { background: rgba(69, 189, 232, 0.12); color: var(--teal); border-color: var(--teal); box-shadow: 0 4px 12px rgba(69, 189, 232, 0.15); transform: translateY(-1px); }
+    .filter-btn.active { background: linear-gradient(135deg, #70499B, #A62D82); color: #fff; border-color: #CB1A71; box-shadow: 0 6px 16px rgba(171, 45, 130, 0.25); font-weight: 700; }
 
     /* MAIN */
     .blog-main { max-width: 1280px; margin: 0 auto; padding: 60px 5vw 80px; }
@@ -62,17 +63,17 @@
 
     /* CATEGORY BADGE */
     .post-category { display: inline-flex; align-items: center; gap: 6px; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; padding: 5px 13px; border-radius: 40px; margin-bottom: 4px; }
-    .cat-erp       { background: #e0f2fe; color: #0369a1; }
-    .cat-ai        { background: #ede9fe; color: #6d28d9; }
-    .cat-cloud     { background: #dcfce7; color: #15803d; }
-    .cat-crm       { background: #fef9c3; color: #a16207; }
-    .cat-software  { background: #fee2e2; color: #b91c1c; }
-    .cat-hrm       { background: #fce7f3; color: #9d174d; }
-    .cat-scm       { background: #e0f2fe; color: #075985; }
-    .cat-ecommerce { background: #fdf4ff; color: #7e22ce; }
+    .cat-erp       { background: #e5d9f2; color: #6A4A94; }
+    .cat-ai        { background: #e0f7fd; color: #0a5a7a; }
+    .cat-cloud     { background: #fef4e6; color: #c85f13; }
+    .cat-crm       { background: #fef0f7; color: #EC008C; }
+    .cat-software  { background: #f5e8ff; color: #6A4A94; }
+    .cat-hrm       { background: #e0f7fd; color: #45BDE8; }
+    .cat-scm       { background: #f0f9fc; color: #2d7a99; }
+    .cat-ecommerce { background: #fff9f0; color: #d97706; }
 
     /* BQ BADGE */
-    .bq-badge { display: inline-flex; align-items: center; gap: 5px; background: linear-gradient(90deg,#059669,#0f766e); color: #fff; font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 4px 12px; border-radius: 40px; margin-left: 8px; }
+    .bq-badge { display: inline-flex; align-items: center; gap: 5px; background: linear-gradient(90deg, #70499B, #A62D82, #CB1A71); color: #fff; font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 4px 12px; border-radius: 40px; margin-left: 8px; }
 
     /* POST META */
     .post-meta { font-size: .8rem; color: var(--muted); display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 18px; }
@@ -99,28 +100,28 @@
     .card-body > p { font-size: .875rem; color: var(--text); flex: 1; margin-bottom: 18px; line-height: 1.7; }
 
     /* CONTEXT BOX — regional summary strip */
-    .context-strip { background: #f0f7ff; border-left: 3px solid #93c5fd; border-radius: 8px; padding: 10px 14px; margin: 0 0 14px; font-size: .8rem; color: #334155; line-height: 1.6; }
-    .context-strip strong { color: #1e40af; }
+    .context-strip { background: #f5e8ff; border-left: 3px solid #d4c5e2; border-radius: 8px; padding: 10px 14px; margin: 0 0 14px; font-size: .8rem; color: #5a4a6b; line-height: 1.6; }
+    .context-strip strong { color: #6A4A94; }
 
     /* BQ HIGHLIGHT BOX */
-    .bq-highlight { background: linear-gradient(120deg,#f0fdf4,#ecfdf5); border: 1.5px solid #6ee7b7; border-radius: 10px; padding: 14px 16px; margin: 0 0 16px; }
-    .bq-highlight .bq-label { font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); margin-bottom: 6px; }
-    .bq-highlight ul { list-style: none; padding: 0; margin: 0; }
-    .bq-highlight li { font-size: .8rem; color: #065f46; padding: 2px 0; font-weight: 500; }
-    .bq-highlight li::before { content: "✓ "; color: var(--accent); font-weight: 800; }
+    .bq-highlight { background: linear-gradient(120deg, #f5e8ff, #f0f9fc); border: 1.5px solid #d4c5e2; border-radius: 10px; padding: 14px 16px; margin: 0 0 16px; }
+    .bq-highlight .bq-label { font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; color: #EC008C; margin-bottom: 6px; text-align: center; }
+    .bq-highlight ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; align-items: center; }
+    .bq-highlight li { font-size: .8rem; color: #6A4A94; padding: 2px 0; font-weight: 500; }
+    .bq-highlight li::before { content: "✓ "; color: #EC008C; font-weight: 800; }
 
     /* CARD FOOTER */
     .card-footer { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
     .post-date { font-size: .75rem; color: var(--muted); }
     .card-read { font-size: .82rem; font-weight: 700; color: var(--accent); text-decoration: none; transition: .2s; }
-    .card-read:hover { color: #047857; }
+    .card-read:hover { color: #CB1A71; }
 
     /* PLACEHOLDER */
-    .post-card.placeholder { border: 2px dashed #c7d9e8; background: #f9fbfd; }
-    .post-card.placeholder .card-img { background: #eef3f8; color: #b0c4d4; }
-    .post-card.placeholder h4 { color: #8fafc4; }
-    .post-card.placeholder > p { color: #b0c4d4; }
-    .placeholder-label { font-size: .74rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: #b0c4d4; border: 1.5px dashed #b0c4d4; border-radius: 40px; padding: 3px 12px; }
+    .post-card.placeholder { border: 2px dashed #d4c5e2; background: #faf9fc; }
+    .post-card.placeholder .card-img { background: #f0e8f6; color: #b8a8d0; }
+    .post-card.placeholder h4 { color: #9d8bb3; }
+    .post-card.placeholder > p { color: #b8a8d0; }
+    .placeholder-label { font-size: .74rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: #b8a8d0; border: 1.5px dashed #b8a8d0; border-radius: 40px; padding: 3px 12px; }
 
     /* WIDE CARD (spans 2 cols) */
     .card-wide { grid-column: span 2; flex-direction: row; }
@@ -129,26 +130,26 @@
     .card-wide h4 { font-size: 1.18rem; }
 
     /* CTA INLINE */
-    .cta-inline { background: linear-gradient(120deg,#0a1c2c,#1b4f6e); border-radius: 20px; padding: 44px 48px; text-align: center; color: #fff; margin-bottom: 64px; }
+    .cta-inline { background: #97C253; border-radius: 20px; padding: 44px 48px; text-align: center; color: #fff; margin-bottom: 64px; }
     .cta-inline h3 { font-size: 1.65rem; font-weight: 800; margin-bottom: 10px; }
     .cta-inline p { color: rgba(255,255,255,.75); margin-bottom: 28px; max-width: 480px; margin-left: auto; margin-right: auto; }
-    .cta-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #fff; font-weight: 700; font-size: .95rem; padding: 12px 28px; border-radius: 40px; text-decoration: none; transition: .2s; }
-    .cta-btn:hover { background: #047857; transform: translateY(-2px); }
+    .cta-btn { display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(90deg, #70499B, #A62D82, #CB1A71); color: #fff; font-weight: 700; font-size: .95rem; padding: 12px 28px; border-radius: 40px; text-decoration: none; transition: .2s; }
+    .cta-btn:hover { background: linear-gradient(90deg, #6A4A94, #9d2366, #b71560); transform: translateY(-2px); }
     .cta-btn-outline { display: inline-flex; align-items: center; gap: 8px; border: 1.5px solid rgba(255,255,255,.4); color: #fff; font-weight: 600; font-size: .95rem; padding: 11px 26px; border-radius: 40px; text-decoration: none; margin-left: 12px; transition: .2s; }
     .cta-btn-outline:hover { background: rgba(255,255,255,.1); }
 
     /* NEWSLETTER */
-    .newsletter { background: #f0fdf4; border: 1.5px solid #6ee7b7; border-radius: 20px; padding: 48px; text-align: center; margin-bottom: 56px; }
+    .newsletter { background: #f5e8ff; border: 1.5px solid #d4c5e2; border-radius: 20px; padding: 48px; text-align: center; margin-bottom: 56px; }
     .newsletter h3 { font-size: 1.55rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
     .newsletter p { color: var(--muted); margin-bottom: 28px; }
     .nl-form { display: flex; gap: 12px; max-width: 460px; margin: 0 auto; flex-wrap: wrap; justify-content: center; }
     .nl-form input { flex: 1; min-width: 210px; padding: 12px 18px; border-radius: 40px; border: 1.5px solid var(--border); font-family: inherit; font-size: .9rem; outline: none; }
     .nl-form input:focus { border-color: var(--accent); }
-    .nl-form button { background: var(--accent); color: #fff; border: none; border-radius: 40px; padding: 12px 28px; font-family: inherit; font-size: .9rem; font-weight: 700; cursor: pointer; transition: background .2s; }
-    .nl-form button:hover { background: #047857; }
+    .nl-form button { background: linear-gradient(90deg, #70499B, #A62D82, #CB1A71); color: #fff; border: none; border-radius: 40px; padding: 12px 28px; font-family: inherit; font-size: .9rem; font-weight: 700; cursor: pointer; transition: background .2s; }
+    .nl-form button:hover { background: linear-gradient(90deg, #6A4A94, #9d2366, #b71560); }
 
     /* PARTNERS */
-    .partners-section { padding: 60px 5vw; background: #f4f8fc; border-top: 1px solid var(--border); }
+    .partners-section { padding: 60px 5vw; background: #f8f6fc; border-top: 1px solid var(--border); }
     .partners-section .inner { max-width: 1280px; margin: 0 auto; }
     .partner-logo { filter: grayscale(20%); opacity: .8; transition: .2s; }
     .partner-logo:hover { filter: grayscale(0%); opacity: 1; transform: scale(1.04); }
@@ -193,7 +194,7 @@
 
 <!-- HERO -->
 <div class="blog-hero">
-  <span class="eyebrow">✦ BinaryQuest Insights</span>
+  <span class="eyebrow">BinaryQuest Insights</span>
   <h1>How <span>BinaryQuest</span> Is Building<br>the Future of Business Software</h1>
   <p>Real stories, real solutions, and honest industry context — from the team that's been transforming businesses across South &amp; South-East Asia for over a decade.</p>
   <div class="hero-stats">
@@ -225,14 +226,13 @@
   <article class="featured-post" data-category="erp">
     <div class="featured-img" style="background:linear-gradient(135deg,#0a2540,#0f6b4a);">
       <img src="https://placehold.co/700x420/0a1c2c/6ee7b7?text=BinaryQuest+ERP" alt="BinaryQuest ERP" onerror="this.style.display='none'">
-      <span style="position:relative;z-index:1;font-size:5rem;">🏗️</span>
     </div>
     <div class="featured-body">
-      <span class="post-category cat-erp">📊 ERP <span class="bq-badge">BinaryQuest Story</span></span>
+      <span class="post-category cat-erp">ERP <span class="bq-badge">BinaryQuest Story</span></span>
       <h2>From Chaos to Command Centre: How BinaryQuest Unifies Operations for Growing Businesses</h2>
-      <div class="post-meta"><span>✍️ BinaryQuest Research Desk</span><span>📅 May 2025</span><span>⏱ 10 min read</span></div>
+      <div class="post-meta"><span>BinaryQuest Research Desk</span><span>May 2025</span><span>10 min read</span></div>
       <p>South Asia's ERP market is projected to exceed <strong>$4.2 billion by 2028</strong>, driven by Bangladesh's booming garment sector, India's enterprise transformation, and Indonesia's SME digitisation wave. BinaryQuest sits at the intersection of this opportunity — as an official <strong>Odoo Partner</strong> with 10+ years of implementation experience, we've built a reputation for delivering ERP that actually works for the businesses that need it most: mid-market manufacturers, distributors, and service companies who outgrew spreadsheets but can't afford SAP.</p>
-      <a href="#" class="read-more">Read our full ERP journey →</a>
+      <a href="#" class="read-more">Read our full ERP journey <i class="fas fa-arrow-right"></i></a>
     </div>
   </article>
 
@@ -241,10 +241,10 @@
   ══════════════════════════════════════ -->
   <div class="section-head" data-section="erp">
     <div class="section-head-left">
-      <h3>📊 Enterprise Resource Planning</h3>
+      <h3>Enterprise Resource Planning</h3>
       <p>The regional ERP landscape — and where BinaryQuest fits in.</p>
     </div>
-    <a href="#">View all ERP articles →</a>
+    <a href="#">View all ERP articles <i class="fas fa-arrow-right"></i></a>
   </div>
   <div class="blog-grid">
 
@@ -252,7 +252,6 @@
     <article class="post-card" data-category="erp">
       <div class="card-img" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);">
         <img src="https://placehold.co/600x380/1e40af/ffffff?text=ERP+Market" alt="ERP Market" onerror="this.style.display='none'">
-        <span style="position:relative;">🌏</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-erp">ERP · Market Overview</span>
@@ -263,7 +262,7 @@
         <p>The South and South-East Asian ERP market is growing at 14–16% annually — faster than any other region. What's driving it? Rising labour costs demanding operational efficiency, international buyer compliance requirements (BSCI, SA8000, WRAP), and a generation of business owners who grew up with smartphones and expect their business software to match. The businesses best positioned to capitalise are those that implement ERP now, before competitors do.</p>
         <div class="card-footer">
           <span class="post-date">May 2025 · 7 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
@@ -272,7 +271,6 @@
     <article class="post-card" data-category="erp">
       <div class="card-img" style="background:linear-gradient(135deg,#d1fae5,#6ee7b7);">
         <img src="https://placehold.co/600x380/065f46/ffffff?text=BQ+Odoo+Partner" alt="BinaryQuest Odoo" onerror="this.style.display='none'">
-        <span style="position:relative;">⚡</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-erp">ERP <span class="bq-badge">BinaryQuest</span></span>
@@ -290,7 +288,7 @@
         <p>Ten years ago, BinaryQuest's founders watched growing businesses get locked into overpriced, inflexible ERP contracts that never quite fit their operations. Odoo changed that. As an open-source, modular platform, Odoo lets BinaryQuest implement only what a client needs — starting with, say, inventory and invoicing — then expand to HR, manufacturing, and e-commerce as the business scales. No forced upgrades. No unused modules. No six-figure licence fees. That's why 200+ clients across Bangladesh, the Middle East, and beyond have trusted BinaryQuest to run their core business on Odoo.</p>
         <div class="card-footer">
           <span class="post-date">Apr 2025 · 9 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
@@ -299,7 +297,6 @@
     <article class="post-card" data-category="erp">
       <div class="card-img" style="background:linear-gradient(135deg,#fef9c3,#fde68a);">
         <img src="https://placehold.co/600x380/92400e/ffffff?text=bquick+Product" alt="bquick" onerror="this.style.display='none'">
-        <span style="position:relative;">📱</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-erp">ERP <span class="bq-badge">Product Spotlight</span></span>
@@ -317,14 +314,14 @@
         <p>Not every business needs a full ERP. For the thousands of small business owners across Bangladesh managing their accounts on paper or Excel, BinaryQuest built bquick — a cloud accounting tool so simple that a shop owner with no accounting background can invoice a client, record an expense, and see their profit margin in under five minutes. bquick is built specifically for the Bangladeshi SME context: VAT-ready, mobile-first, and priced so that even a 5-person business can afford professional financial management. It's BinaryQuest's commitment to making enterprise-grade tools accessible at every business size.</p>
         <div class="card-footer">
           <span class="post-date">Apr 2025 · 6 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
 
     <!-- ERP Placeholder -->
     <article class="post-card placeholder" data-category="erp">
-      <div class="card-img">📝</div>
+      <div class="card-img"></div>
       <div class="card-body">
         <span class="post-category">ERP · Coming Soon</span>
         <h4>BinaryQuest ERP Case Study: How a Dhaka Garment Factory Cut Lead Times by 40%</h4>
@@ -340,10 +337,10 @@
   ══════════════════════════════════════ -->
   <div class="section-head" data-section="ai">
     <div class="section-head-left">
-      <h3>🤖 Artificial Intelligence &amp; Machine Learning</h3>
+      <h3>Artificial Intelligence &amp; Machine Learning</h3>
       <p>The AI revolution in South Asia — and BinaryQuest's intelligent automation practice.</p>
     </div>
-    <a href="#">View all AI articles →</a>
+    <a href="#">View all AI articles <i class="fas fa-arrow-right"></i></a>
   </div>
   <div class="blog-grid">
 
@@ -351,7 +348,6 @@
     <article class="post-card" data-category="ai">
       <div class="card-img" style="background:linear-gradient(135deg,#ede9fe,#ddd6fe);">
         <img src="https://placehold.co/600x380/5b21b6/ffffff?text=AI+South+Asia" alt="AI South Asia" onerror="this.style.display='none'">
-        <span style="position:relative;">🌏</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-ai">AI / ML · Market Overview</span>
@@ -362,7 +358,7 @@
         <p>South and South-East Asia is not just consuming AI — it's building it. India produces 16% of the world's AI research papers. Indonesia's GoTo Group matches 2.5 million ride-hailing pairs per hour using real-time ML. The region's AI story is not one of catching up with the West — it's one of solving uniquely local problems at world-beating scale: credit scoring the unbanked, predicting monsoon crop yields, detecting garment defects in real time, and conversing fluently in 15+ local languages. This is the context in which BinaryQuest's AI practice operates.</p>
         <div class="card-footer">
           <span class="post-date">May 2025 · 8 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
@@ -371,7 +367,6 @@
     <article class="post-card" data-category="ai">
       <div class="card-img" style="background:linear-gradient(135deg,#d1fae5,#6ee7b7);">
         <img src="https://placehold.co/600x380/065f46/ffffff?text=BQ+AI+Agents" alt="BinaryQuest AI" onerror="this.style.display='none'">
-        <span style="position:relative;">🧠</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-ai">AI / ML <span class="bq-badge">BinaryQuest</span></span>
@@ -389,7 +384,7 @@
         <p>BinaryQuest's AI practice was built around a single conviction: AI should eliminate the repetitive, error-prone work that burns out talented people — not replace the judgement and relationships that make businesses great. Our AI agents handle invoice data extraction, auto-reconcile bank statements, predict stock-out risks before they happen, and route customer queries to the right person instantly. These aren't off-the-shelf tools. Every AI solution BinaryQuest builds is trained on the client's own data, integrated into their existing Odoo or custom software environment, and designed to improve measurably over time as it processes more business transactions.</p>
         <div class="card-footer">
           <span class="post-date">Apr 2025 · 10 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
@@ -398,7 +393,6 @@
     <article class="post-card" data-category="ai">
       <div class="card-img" style="background:linear-gradient(135deg,#fef3c7,#fed7aa);">
         <img src="https://placehold.co/600x380/b45309/ffffff?text=AI+for+Business" alt="AI for Business" onerror="this.style.display='none'">
-        <span style="position:relative;">📊</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-ai">AI / ML <span class="bq-badge">Practical Guide</span></span>
@@ -416,14 +410,14 @@
         <p>Most businesses that fail at AI don't fail because the technology didn't work — they fail because they tried to automate chaos. Before BinaryQuest starts any AI engagement, we run our clients through a structured readiness assessment. The goal isn't to gatekeep AI — it's to ensure that the first AI investment succeeds and builds confidence for the next one. In our experience, businesses that score well on data quality and process definition see 3–6x better ROI on their first AI project than those that rush straight to models. This article walks through each question and what "good" looks like for a mid-market South Asian business.</p>
         <div class="card-footer">
           <span class="post-date">Mar 2025 · 8 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
 
     <!-- AI Placeholder -->
     <article class="post-card placeholder" data-category="ai">
-      <div class="card-img">🤖</div>
+      <div class="card-img"></div>
       <div class="card-body">
         <span class="post-category">AI / ML · Coming Soon</span>
         <h4>BinaryQuest AI Case Study: Reducing Invoice Processing Time by 85% for a Dhaka Distributor</h4>
@@ -438,7 +432,7 @@
   <div class="cta-inline">
     <h3>Ready to see BinaryQuest in action?</h3>
     <p>Book a free 30-minute consultation. We'll map your biggest operational pain point to a specific solution — no generic demos, no sales pressure.</p>
-    <a href="contact.html" class="cta-btn">Book a Free Consultation →</a>
+    <a href="contact.html" class="cta-btn">Book a Free Consultation <i class="fas fa-arrow-right"></i></a>
     <a href="#" class="cta-btn-outline">View our solutions</a>
   </div>
 
@@ -447,10 +441,10 @@
   ══════════════════════════════════════ -->
   <div class="section-head" data-section="cloud">
     <div class="section-head-left">
-      <h3>☁️ Cloud Transformation</h3>
+      <h3>Cloud Transformation</h3>
       <p>How BinaryQuest moves businesses from on-premise to cloud — safely and affordably.</p>
     </div>
-    <a href="#">View all Cloud articles →</a>
+    <a href="#">View all Cloud articles <i class="fas fa-arrow-right"></i></a>
   </div>
   <div class="blog-grid">
 
@@ -458,7 +452,6 @@
     <article class="post-card" data-category="cloud">
       <div class="card-img" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0);">
         <img src="https://placehold.co/600x380/166534/ffffff?text=Cloud+South+Asia" alt="Cloud South Asia" onerror="this.style.display='none'">
-        <span style="position:relative;">🌏</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-cloud">Cloud · Market Overview</span>
@@ -469,7 +462,7 @@
         <p>South Asia's cloud market is expanding at nearly three times the global average. Three forces are converging: regulatory mandates (Bangladesh Bank, Indonesia's OJK, Pakistan's SECP all issuing cloud frameworks), hyperscaler investment (AWS, Azure, and Google Cloud collectively committed $15B+ to the region in 2023–24), and a post-pandemic validation that cloud-based operations survive disruptions that on-premise systems cannot. For businesses in this region, the question is no longer "should we move to cloud?" — it's "who will guide us there safely?"</p>
         <div class="card-footer">
           <span class="post-date">May 2025 · 7 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
@@ -478,7 +471,6 @@
     <article class="post-card" data-category="cloud">
       <div class="card-img" style="background:linear-gradient(135deg,#d1fae5,#a7f3d0);">
         <img src="https://placehold.co/600x380/065f46/ffffff?text=BQ+Cloud" alt="BinaryQuest Cloud" onerror="this.style.display='none'">
-        <span style="position:relative;">🚀</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-cloud">Cloud <span class="bq-badge">BinaryQuest</span></span>
@@ -496,7 +488,7 @@
         <p>BinaryQuest's cloud migration practice was built after watching businesses suffer through poorly planned migrations: data loss, unexpected downtime, cost overruns, and compliance failures. Our six-stage methodology — Assess, Architect, Migrate, Validate, Train, Optimise — eliminates these risks by treating cloud migration as a change management exercise, not just a technical one. We run parallel environments during migration, so clients never face a hard cutover. Every migration includes a documented rollback plan, a user training programme, and a 90-day post-migration hypercare period. For regulated industries like banking and healthcare, we design hybrid architectures that keep sensitive data on-premise while pushing workloads to cloud for scalability and cost savings.</p>
         <div class="card-footer">
           <span class="post-date">Apr 2025 · 9 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
@@ -505,7 +497,6 @@
     <article class="post-card" data-category="cloud">
       <div class="card-img" style="background:linear-gradient(135deg,#e0f2fe,#93c5fd);">
         <img src="https://placehold.co/600x380/1e40af/ffffff?text=Cloud+Cost" alt="Cloud Cost" onerror="this.style.display='none'">
-        <span style="position:relative;">💰</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-cloud">Cloud <span class="bq-badge">Practical Guide</span></span>
@@ -523,14 +514,15 @@
         <p>When BinaryQuest runs a cloud business case for a client, we always start with the costs that aren't on any invoice: the 3-hour monthly downtime during load-shedding, the IT staff overtime during server failures, the business lost when a sales team can't access CRM from the road, and the compliance risk of backup tapes stored in a filing cabinet. These hidden costs typically add up to 2–3x the visible IT budget. Cloud doesn't just save money — it removes the operational drag that prevents growing businesses from focusing on what they do best. BinaryQuest's cloud ROI framework has helped 50+ businesses justify and execute their first cloud migration with confidence.</p>
         <div class="card-footer">
           <span class="post-date">Mar 2025 · 8 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
+
         </div>
       </div>
     </article>
 
     <!-- Cloud Placeholder -->
     <article class="post-card placeholder" data-category="cloud">
-      <div class="card-img">🔐</div>
+      <div class="card-img"></div>
       <div class="card-body">
         <span class="post-category">Cloud · Coming Soon</span>
         <h4>BinaryQuest Cloud Case Study: How a Chittagong Distributor Eliminated 4 Hours of Daily IT Downtime</h4>
@@ -546,10 +538,10 @@
   ══════════════════════════════════════ -->
   <div class="section-head" data-section="crm">
     <div class="section-head-left">
-      <h3>💬 CRM &amp; Customer Experience</h3>
+      <h3>CRM &amp; Customer Experience</h3>
       <p>How BinaryQuest helps businesses turn every lead into a long-term relationship.</p>
     </div>
-    <a href="#">View all CRM articles →</a>
+    <a href="#">View all CRM articles <i class="fas fa-arrow-right"></i></a>
   </div>
   <div class="blog-grid">
 
@@ -557,7 +549,6 @@
     <article class="post-card" data-category="crm">
       <div class="card-img" style="background:linear-gradient(135deg,#fef9c3,#fde68a);">
         <img src="https://placehold.co/600x380/92400e/ffffff?text=CRM+South+Asia" alt="CRM South Asia" onerror="this.style.display='none'">
-        <span style="position:relative;">🌏</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-crm">CRM · Market Overview</span>
@@ -568,7 +559,7 @@
         <p>The best CRM deployments in South Asia share a common trait: they were built around how customers actually behave in this region — mobile-first, high price sensitivity, preference for personal relationships over automated sequences, and a growing but still-developing trust in digital channels. The worst CRM deployments are Western platforms configured for Western sales processes and imposed on South Asian field sales teams who ignore them within three months. BinaryQuest's CRM practice is built entirely around the former approach.</p>
         <div class="card-footer">
           <span class="post-date">Apr 2025 · 7 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
@@ -577,7 +568,6 @@
     <article class="post-card" data-category="crm">
       <div class="card-img" style="background:linear-gradient(135deg,#d1fae5,#a7f3d0);">
         <img src="https://placehold.co/600x380/065f46/ffffff?text=BQ+CRM" alt="BinaryQuest CRM" onerror="this.style.display='none'">
-        <span style="position:relative;">📈</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-crm">CRM <span class="bq-badge">BinaryQuest</span></span>
@@ -595,7 +585,7 @@
         <p>BinaryQuest's CRM implementations are built on Odoo CRM, but configured specifically for South Asian business realities. Where a generic CRM might assume all customer communication happens via email, we integrate WhatsApp Business API — because that's where 80% of sales conversations in Bangladesh, Pakistan, and Indonesia actually happen. Where a generic CRM shows a Western-style Kanban board, we build field sales dashboards that work on a mid-range Android phone with intermittent connectivity. The result is a CRM that field sales representatives actually use — which is the only CRM that delivers ROI. Clients typically see 25–40% improvement in pipeline visibility within the first 90 days.</p>
         <div class="card-footer">
           <span class="post-date">Apr 2025 · 9 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
@@ -604,7 +594,6 @@
     <article class="post-card" data-category="crm">
       <div class="card-img" style="background:linear-gradient(135deg,#fef3c7,#fdba74);">
         <img src="https://placehold.co/600x380/9a3412/ffffff?text=CRM+ROI" alt="CRM ROI" onerror="this.style.display='none'">
-        <span style="position:relative;">💡</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-crm">CRM <span class="bq-badge">Practical Guide</span></span>
@@ -622,14 +611,14 @@
         <p>Industry research consistently finds that 60–70% of CRM projects fail to deliver expected ROI. In BinaryQuest's experience, the failure is almost never the software — it's the implementation approach. The most common mistake: configuring the CRM for how management thinks the sales process works, rather than how the sales team actually operates. BinaryQuest's CRM engagements begin with a two-week process discovery phase where we shadow the sales team, map their real workflows, identify friction points, and only then configure the system. Adoption is then managed as a formal change programme, not an afterthought — because a CRM that nobody uses is worse than no CRM at all.</p>
         <div class="card-footer">
           <span class="post-date">Mar 2025 · 8 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
 
     <!-- CRM Placeholder -->
     <article class="post-card placeholder" data-category="crm">
-      <div class="card-img">🤝</div>
+      <div class="card-img"></div>
       <div class="card-body">
         <span class="post-category">CRM · Coming Soon</span>
         <h4>BinaryQuest CRM Case Study: How a Dhaka Distributor Grew Sales 35% Without Adding Headcount</h4>
@@ -645,10 +634,10 @@
   ══════════════════════════════════════ -->
   <div class="section-head" data-section="software">
     <div class="section-head-left">
-      <h3>💻 Custom Software Development</h3>
+      <h3>Custom Software Development</h3>
       <p>From MVP to enterprise platform — BinaryQuest's software engineering practice.</p>
     </div>
-    <a href="#">View all Software articles →</a>
+    <a href="#">View all Software articles <i class="fas fa-arrow-right"></i></a>
   </div>
   <div class="blog-grid">
 
@@ -656,7 +645,6 @@
     <article class="post-card" data-category="software">
       <div class="card-img" style="background:linear-gradient(135deg,#fee2e2,#fca5a5);">
         <img src="https://placehold.co/600x380/991b1b/ffffff?text=Software+Market" alt="Software Market" onerror="this.style.display='none'">
-        <span style="position:relative;">🌏</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-software">Software · Market Overview</span>
@@ -667,7 +655,7 @@
         <p>South Asia is the world's software development engine. The talent is world-class, the delivery track record is proven, and the time zone advantage for European and Middle Eastern clients is significant. But quality varies enormously between vendors. BinaryQuest's software practice was built on a simple belief: mid-market businesses in this region deserve the same engineering rigour that Fortune 500 companies pay for — at a price point they can actually afford. That means proper requirements discovery, documented architecture decisions, code reviews, automated testing, and post-launch support. Not just feature delivery.</p>
         <div class="card-footer">
           <span class="post-date">May 2025 · 7 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
@@ -676,7 +664,6 @@
     <article class="post-card" data-category="software">
       <div class="card-img" style="background:linear-gradient(135deg,#d1fae5,#6ee7b7);">
         <img src="https://placehold.co/600x380/065f46/ffffff?text=BQ+Software" alt="BinaryQuest Software" onerror="this.style.display='none'">
-        <span style="position:relative;">🛠️</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-software">Software <span class="bq-badge">BinaryQuest</span></span>
@@ -694,7 +681,7 @@
         <p>BinaryQuest's software development practice runs on a sprint-based MVP methodology designed to eliminate the single biggest risk in software projects: building the wrong thing. Before a line of code is written, we run a structured discovery sprint — mapping user journeys, identifying the riskiest assumptions, and defining the minimum feature set that validates the business idea. The output is a working prototype, not a specification document. Clients see their product in their hands within weeks, not months — which means real user feedback shapes development from day one. This approach has produced products ranging from hospital management systems and school ERP platforms to custom Odoo modules for Bangladesh's largest distributors.</p>
         <div class="card-footer">
           <span class="post-date">Apr 2025 · 10 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
@@ -703,7 +690,6 @@
     <article class="post-card" data-category="software">
       <div class="card-img" style="background:linear-gradient(135deg,#fef3c7,#fde68a);">
         <img src="https://placehold.co/600x380/a16207/ffffff?text=Offshore+Dev" alt="Offshore Dev" onerror="this.style.display='none'">
-        <span style="position:relative;">🌐</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-software">Software <span class="bq-badge">Offshore Model</span></span>
@@ -721,14 +707,14 @@
         <p>BinaryQuest's offshore development model was designed specifically for the pain points that make clients distrust offshore partners: invisible progress, junior-heavy teams, communication gaps, and code they can never own. Our offshore engagements operate on a dedicated team model — your BinaryQuest team works exclusively on your project, participates in your standups, uses your project management tools, and commits code to your repository. You own everything. The cost advantage is real: senior full-stack developers from Dhaka deliver at 60–70% of equivalent North American or European rates — without compromising on code quality, test coverage, or documentation standards.</p>
         <div class="card-footer">
           <span class="post-date">Mar 2025 · 9 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
 
     <!-- Software Placeholder -->
     <article class="post-card placeholder" data-category="software">
-      <div class="card-img">🏗️</div>
+      <div class="card-img"></div>
       <div class="card-body">
         <span class="post-category">Software · Coming Soon</span>
         <h4>BinaryQuest Software Case Study: Building a Hospital Management System in 14 Weeks</h4>
@@ -743,7 +729,7 @@
   <div class="cta-inline">
     <h3>BinaryQuest has built solutions across 8 industries</h3>
     <p>From garment factories in Dhaka to distributors in the Middle East — our solutions are designed for the businesses that keep this region moving.</p>
-    <a href="#" class="cta-btn">Explore our solutions →</a>
+    <a href="#" class="cta-btn">Explore our solutions <i class="fas fa-arrow-right"></i></a>
     <a href="contact.html" class="cta-btn-outline">Talk to our team</a>
   </div>
 
@@ -752,10 +738,10 @@
   ══════════════════════════════════════ -->
   <div class="section-head" data-section="hrm">
     <div class="section-head-left">
-      <h3>👥 Human Resource Management</h3>
+      <h3>Human Resource Management</h3>
       <p>Managing people in South Asia's complex labour landscape — the BinaryQuest HRMS approach.</p>
     </div>
-    <a href="#">View all HRM articles →</a>
+    <a href="#">View all HRM articles <i class="fas fa-arrow-right"></i></a>
   </div>
   <div class="blog-grid">
 
@@ -763,7 +749,6 @@
     <article class="post-card" data-category="hrm">
       <div class="card-img" style="background:linear-gradient(135deg,#fce7f3,#fbcfe8);">
         <img src="https://placehold.co/600x380/831843/ffffff?text=HRM+South+Asia" alt="HRM South Asia" onerror="this.style.display='none'">
-        <span style="position:relative;">🌏</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-hrm">HRM · Market Overview</span>
@@ -774,7 +759,7 @@
         <p>Human resource management in South Asia is not a back-office function — it's a strategic and legal imperative. Bangladesh's garment factories face international buyer audits that scrutinise HR records as closely as product quality. Indian companies manage compliance across 29 states with different shop-and-establishment laws. Pakistani manufacturers are navigating four sets of provincial labour regulations post-18th Amendment. Indonesian exporters must demonstrate BPJS compliance to access EU and US markets. In this environment, an HRMS is not a nice-to-have — it's a legal shield and a competitive differentiator.</p>
         <div class="card-footer">
           <span class="post-date">May 2025 · 7 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
@@ -783,7 +768,6 @@
     <article class="post-card" data-category="hrm">
       <div class="card-img" style="background:linear-gradient(135deg,#d1fae5,#a7f3d0);">
         <img src="https://placehold.co/600x380/065f46/ffffff?text=BQ+HRMS" alt="BinaryQuest HRMS" onerror="this.style.display='none'">
-        <span style="position:relative;">🗂️</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-hrm">HRM <span class="bq-badge">BinaryQuest</span></span>
@@ -801,7 +785,7 @@
         <p>BinaryQuest's HRMS was built from the ground up to handle the specific complexity of managing a South Asian workforce. The system calculates Bangladesh Labour Act-compliant gratuity automatically, flags workers approaching their 5-year threshold, and generates the documentation needed for social compliance audits by H&M, Primark, or any international buyer. Payroll runs in minutes rather than days, with automatic tax calculations aligned to NBR (National Board of Revenue) rules and direct disbursement via bKash or Nagad integration — eliminating the cash-handling risks that have plagued large factory payrolls. For managers, a real-time dashboard shows attendance, overtime hours, and leave liability — the data needed to make staffing decisions before costs spiral.</p>
         <div class="card-footer">
           <span class="post-date">Apr 2025 · 9 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
@@ -810,7 +794,6 @@
     <article class="post-card" data-category="hrm">
       <div class="card-img" style="background:linear-gradient(135deg,#e0f2fe,#93c5fd);">
         <img src="https://placehold.co/600x380/1e40af/ffffff?text=HR+Compliance" alt="HR Compliance" onerror="this.style.display='none'">
-        <span style="position:relative;">⚖️</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-hrm">HRM <span class="bq-badge">Compliance Guide</span></span>
@@ -828,14 +811,14 @@
         <p>The Bangladesh Labour Act 2006 and its subsequent amendments define a comprehensive set of obligations for every employer. Yet BinaryQuest's HR consultants routinely find businesses — including well-intentioned, socially responsible ones — with gaps in gratuity provisioning, incorrect overtime calculations, or festival bonus records that don't match payroll. These gaps create real legal exposure and, more importantly, real harm to workers who are owed what they've earned. This guide walks through the five most common compliance failures BinaryQuest finds during HRMS implementation engagements — and how to fix them before an audit finds them for you.</p>
         <div class="card-footer">
           <span class="post-date">Mar 2025 · 10 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
 
     <!-- HRM Placeholder -->
     <article class="post-card placeholder" data-category="hrm">
-      <div class="card-img">📋</div>
+      <div class="card-img"></div>
       <div class="card-body">
         <span class="post-category">HRM · Coming Soon</span>
         <h4>BinaryQuest HRMS Case Study: How a 1,200-Worker Factory Passed Its First Social Audit</h4>
@@ -851,10 +834,10 @@
   ══════════════════════════════════════ -->
   <div class="section-head" data-section="scm">
     <div class="section-head-left">
-      <h3>🔗 Supply Chain Management</h3>
+      <h3>Supply Chain Management</h3>
       <p>End-to-end supply chain visibility — from raw materials to the customer's door.</p>
     </div>
-    <a href="#">View all SCM articles →</a>
+    <a href="#">View all SCM articles <i class="fas fa-arrow-right"></i></a>
   </div>
   <div class="blog-grid">
 
@@ -862,7 +845,6 @@
     <article class="post-card" data-category="scm">
       <div class="card-img" style="background:linear-gradient(135deg,#dbeafe,#93c5fd);">
         <img src="https://placehold.co/600x380/1e3a8a/ffffff?text=SCM+South+Asia" alt="SCM South Asia" onerror="this.style.display='none'">
-        <span style="position:relative;">🌏</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-scm">Supply Chain · Market Overview</span>
@@ -873,7 +855,7 @@
         <p>South Asia's supply chains are among the world's most complex — and most inefficient. The region's exporters face constant pressure from global buyers demanding shorter lead times, traceability documentation, and sustainability reporting while simultaneously dealing with infrastructure constraints, power interruptions, and port congestion that are simply not factors for competitors in Vietnam or Cambodia. Digital supply chain management — real-time inventory, demand forecasting, supplier portals, and track-and-trace — is no longer optional for businesses that want to remain competitive on the global stage.</p>
         <div class="card-footer">
           <span class="post-date">Apr 2025 · 7 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
@@ -882,7 +864,6 @@
     <article class="post-card" data-category="scm">
       <div class="card-img" style="background:linear-gradient(135deg,#d1fae5,#a7f3d0);">
         <img src="https://placehold.co/600x380/065f46/ffffff?text=BQ+SCM" alt="BinaryQuest SCM" onerror="this.style.display='none'">
-        <span style="position:relative;">📦</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-scm">Supply Chain <span class="bq-badge">BinaryQuest</span></span>
@@ -900,7 +881,7 @@
         <p>BinaryQuest's supply chain management module, built on the Odoo platform, gives growing businesses the inventory intelligence that was previously only available to large enterprises. Our AI demand forecasting engine — trained on each client's historical sales data, seasonal patterns, and order lead times — reduces stockouts by an average of 35% and excess inventory holding costs by 28% in the first year of operation. The supplier portal eliminates the email and phone tag that delays purchase orders, with suppliers receiving digital POs, confirming delivery timelines, and submitting invoices through a self-service web portal that integrates directly into the client's accounting system. For businesses managing goods across multiple warehouses or distribution points, the real-time multi-location inventory view is transformative: stock allocation decisions that used to take hours of phone calls now take seconds.</p>
         <div class="card-footer">
           <span class="post-date">Apr 2025 · 9 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
@@ -909,7 +890,6 @@
     <article class="post-card" data-category="scm">
       <div class="card-img" style="background:linear-gradient(135deg,#fef9c3,#fde68a);">
         <img src="https://placehold.co/600x380/92400e/ffffff?text=Inventory+AI" alt="Inventory AI" onerror="this.style.display='none'">
-        <span style="position:relative;">🔮</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-scm">Supply Chain <span class="bq-badge">Practical Guide</span></span>
@@ -927,14 +907,13 @@
         <p>BinaryQuest's supply chain consultants have reviewed hundreds of inventory operations across South Asia, and the warning signs that a business has outgrown its current approach are remarkably consistent. The most expensive one — by far — is the "buffer stock" mentality: over-ordering everything because nobody trusts the inventory data, then writing off slow-moving and expired stock at year-end. One BinaryQuest client in the pharmaceutical distribution sector was writing off BDT 8 million annually in expired stock. After implementing Odoo inventory with AI-driven reorder points and expiry date tracking, their write-offs fell to BDT 800,000 in the first year — a 10× return on their ERP investment from a single metric.</p>
         <div class="card-footer">
           <span class="post-date">Mar 2025 · 8 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
 
     <!-- SCM Placeholder -->
     <article class="post-card placeholder" data-category="scm">
-      <div class="card-img">🚢</div>
       <div class="card-body">
         <span class="post-category">Supply Chain · Coming Soon</span>
         <h4>BinaryQuest SCM Case Study: How a Chittagong Importer Cut Procurement Cycle by 12 Days</h4>
@@ -950,10 +929,10 @@
   ══════════════════════════════════════ -->
   <div class="section-head" data-section="ecommerce">
     <div class="section-head-left">
-      <h3>🛒 E-Commerce</h3>
+      <h3>E-Commerce</h3>
       <p>How BinaryQuest helps businesses sell online — from storefront to fulfilment.</p>
     </div>
-    <a href="#">View all E-Commerce articles →</a>
+    <a href="#">View all E-Commerce articles <i class="fas fa-arrow-right"></i></a>
   </div>
   <div class="blog-grid">
 
@@ -961,7 +940,6 @@
     <article class="post-card" data-category="ecommerce">
       <div class="card-img" style="background:linear-gradient(135deg,#fdf4ff,#ddd6fe);">
         <img src="https://placehold.co/600x380/5b21b6/ffffff?text=Ecom+South+Asia" alt="Ecommerce South Asia" onerror="this.style.display='none'">
-        <span style="position:relative;">🌏</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-ecommerce">E-Commerce · Market Overview</span>
@@ -972,7 +950,7 @@
         <p>E-commerce in South Asia has a defining characteristic that separates it from Western markets: the dominance of mobile, the resilience of social commerce, and the critical role of trust-building in markets where card penetration is low and cash-on-delivery remains the default. Businesses that succeed in this environment understand that an e-commerce strategy is not just a website — it's a fulfilment promise, a payment experience, a customer service commitment, and a mobile-first design approach. BinaryQuest's e-commerce practice is built entirely around this reality.</p>
         <div class="card-footer">
           <span class="post-date">May 2025 · 7 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
@@ -981,7 +959,6 @@
     <article class="post-card" data-category="ecommerce">
       <div class="card-img" style="background:linear-gradient(135deg,#d1fae5,#6ee7b7);">
         <img src="https://placehold.co/600x380/065f46/ffffff?text=BQ+Ecommerce" alt="BinaryQuest Ecommerce" onerror="this.style.display='none'">
-        <span style="position:relative;">🛍️</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-ecommerce">E-Commerce <span class="bq-badge">BinaryQuest</span></span>
@@ -999,7 +976,7 @@
         <p>The problem with most e-commerce implementations for South Asian businesses is fragmentation: the online store is disconnected from inventory (so overselling happens daily), orders are manually copied into the accounting system (creating errors and delays), and fulfilment is managed via WhatsApp with the warehouse team. BinaryQuest's e-commerce solution, built on Odoo, eliminates all three problems by design. When an order is placed online, inventory is decremented instantly across all sales channels, a picking list is generated for the warehouse, and the invoice is auto-posted to the accounting ledger — with zero human intervention. Payment integration covers the full South Asian payment landscape: bKash, Nagad, SSLCOMMERZ, and cash-on-delivery all configured out of the box for the Bangladesh market.</p>
         <div class="card-footer">
           <span class="post-date">Apr 2025 · 10 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
@@ -1008,7 +985,6 @@
     <article class="post-card" data-category="ecommerce">
       <div class="card-img" style="background:linear-gradient(135deg,#fef3c7,#fde68a);">
         <img src="https://placehold.co/600x380/92400e/ffffff?text=D2C+Guide" alt="D2C Guide" onerror="this.style.display='none'">
-        <span style="position:relative;">📊</span>
       </div>
       <div class="card-body">
         <span class="post-category cat-ecommerce">E-Commerce <span class="bq-badge">Practical Guide</span></span>
@@ -1026,14 +1002,14 @@
         <p>Bangladesh's D2C (Direct-to-Consumer) e-commerce market is one of the most accessible anywhere in Asia for entrepreneurs: high mobile penetration, a digital payment infrastructure that works, and logistics partners covering every district. Yet most D2C launches fail not because of the idea, but because of operational fragility — a store that can't handle 100 simultaneous orders, payment confirmations that don't trigger fulfilment, and customer service via personal WhatsApp that doesn't scale beyond 20 orders a day. BinaryQuest's D2C launch package takes a business from zero to a production-ready online store — with inventory, payments, delivery, and basic analytics all connected — in 4–6 weeks, with no technical co-founder required from the client side.</p>
         <div class="card-footer">
           <span class="post-date">Mar 2025 · 9 min</span>
-          <a href="#" class="card-read">Read →</a>
+          <a href="#" class="card-read">Read <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </article>
 
     <!-- Ecom Placeholder -->
     <article class="post-card placeholder" data-category="ecommerce">
-      <div class="card-img">📦</div>
+      <div class="card-img"></div>
       <div class="card-body">
         <span class="post-category">E-Commerce · Coming Soon</span>
         <h4>BinaryQuest E-Commerce Case Study: How a Dhaka Fashion Brand Hit BDT 1 Crore Monthly Online Revenue</h4>
@@ -1050,7 +1026,7 @@
     <p>New articles, product updates, and practical guides — delivered monthly. No spam. Unsubscribe anytime.</p>
     <form class="nl-form" onsubmit="return false;">
       <input type="email" placeholder="you@company.com" />
-      <button type="submit">Subscribe →</button>
+      <button type="submit">Subscribe <i class="fas fa-arrow-right"></i></button>
     </form>
   </div>
 
@@ -1060,7 +1036,7 @@
 <section class="partners-section">
   <div class="inner">
     <div style="text-align:center; margin-bottom:36px;">
-      <span style="color:var(--accent); font-weight:600; font-size:.78rem; text-transform:uppercase; letter-spacing:.08em;">✦ Trusted Globally</span>
+      <span style="color:var(--accent); font-weight:600; font-size:.78rem; text-transform:uppercase; letter-spacing:.08em;"><i class="fas fa-globe"></i> Trusted Globally</span>
       <h3 style="font-size:clamp(1.3rem,3vw,1.8rem); font-weight:800; margin-top:6px; color:var(--navy);">Powered by Industry Leaders</h3>
     </div>
     <div class="swiper partner-swiper" style="overflow:hidden;">
